@@ -6,6 +6,6 @@
 //     }, 800)
 // })
 $('#hide-control').click(function () {
-    $('.title').fadeOut(250, 'linear')
-    $('.main-screen').fadeIn()
+    $('.svg').fadeOut(250, 'linear')
+    $('.main').fadeIn()
 })

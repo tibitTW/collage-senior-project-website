@@ -6,6 +6,10 @@
     user-select: none;
 }
 
+.main {
+    display: none;
+}
+
 .menu-bar {
     width: 100%;
     height: 125px;
@@ -81,13 +85,13 @@
     color: #fff;
 }
 
-.main {
+.main-content {
     width: 100%;
     position: absolute;
     top: 150px;
     left: 0px;
 }
-.main > div {
+.main-content > div {
     margin: 0 10%;
     width: 80%;
     height: 750px;
