@@ -93,9 +93,9 @@
     height: 750px;
 }
 
-.main-box {
-    border: 1px solid #000;
-}
+/* .main-box {
+    border: 1px solid rgb(78, 3, 53);
+} */
 
 .title {
     width: 150px;
@@ -109,6 +109,7 @@
     padding: 10px;
     overflow-wrap: break-word;
     font-size: 20px;
+    margin-top: 50px;
     height: 500px;
 }
 
@@ -117,7 +118,6 @@
 }
 .home-content {
     /* position: absolute; */
-    margin-top: 50px;
     background-color: slateblue;
 }
 
@@ -127,7 +127,6 @@
 
 .about-main {
     margin-top: 20px;
-    width: 1250px;
     height: 620px;
     /*background-color: seagreen;*/
 }
@@ -144,7 +143,6 @@
     height: 450px;
     background-color: sandybrown;
 }
-
 .a_22 {
     margin-top: 20px;
     position: relative;
@@ -159,105 +157,67 @@
     height: 650px;
     background-color: skyblue;
     float: right;
-    right: 80px;
+    /* right: 80px; */
 }
 
-person-photo {
+.person-photo {
+    position: absolute;
     width: 200px;
     height: 200px;
+    filter: grayscale(100%);
 }
+.person-photo:hover {
+    transform: translateY(-80px);
+    filter: grayscale(0);
+}
+
 /*上差-180px  左差50px*/
-.a_23 {
-    top: 80px;
+#person-photo-1 {
+    top: 60px;
     left: 25px;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background-color: seashell;
     background-size: cover;
     background: url(../images/02.jpg);
-    filter: grayscale(100%);
 }
-.a_23:hover {
-    transform: translateY(-80px);
-    filter: grayscale(0%);
-}
-.a_23:hover ~ .a_29 {
+#person-photo-1:hover ~ .a_29 {
     background: url(../images/02.jpg);
     opacity: 1;
 }
 
-.a_24 {
-    position: relative;
-    top: -100px;
+#person-photo-2 {
+    top: 80px;
     left: 75px;
-    width: 200px;
-    height: 200px;
-    background-color: seashell;
     background: url(../images/03.jpg);
-    filter: grayscale(100%);
 }
-.a_24:hover {
-    transform: translateY(-80px);
-    filter: grayscale(0%);
-}
-.a_24:hover ~ .a_29 {
+#person-photo-2:hover ~ .a_29 {
     background: url(../images/03.jpg);
     opacity: 1;
 }
 
-.a_25 {
-    position: relative;
-    top: -280px;
+#person-photo-3 {
+    top: 100px;
     left: 125px;
-    width: 200px;
-    height: 200px;
-    background-color: seashell;
     background: url(../images/04.jpg);
-    filter: grayscale(100%);
 }
-.a_25:hover {
-    transform: translateY(-80px);
-    filter: grayscale(0%);
-}
-.a_25:hover ~ .a_29 {
+#person-photo-3:hover ~ .a_29 {
     background: url(../images/04.jpg);
     opacity: 1;
 }
 
-.a_26 {
-    position: relative;
-    top: -460px;
+#person-photo-4 {
+    top: 120px;
     left: 175px;
-    width: 200px;
-    height: 200px;
-    background-color: seashell;
     background: url(../images/05.jpg);
-    filter: grayscale(100%);
 }
-.a_26:hover {
-    transform: translateY(-80px);
-    filter: grayscale(0%);
-}
-.a_26:hover ~ .a_29 {
+#person-photo-4:hover ~ .a_29 {
     background: url(../images/05.jpg);
     opacity: 1;
 }
-.a_27 {
-    position: relative;
-    top: -640px;
+#person-photo-5 {
+    top: 140px;
     left: 225px;
-    width: 200px;
-    height: 200px;
-    background-color: seashell;
     background: url(../images/06.jpg);
-    filter: grayscale(100%);
 }
-.a_27:hover {
-    transform: translateY(-80px);
-    filter: grayscale(0%);
-}
-.a_27:hover ~ .a_29 {
+#person-photo-5:hover ~ .a_29 {
     background: url(../images/06.jpg);
     opacity: 1;
     transition: 0.5s;
@@ -265,26 +225,19 @@ person-photo {
     background-size: auto 100%;
 }
 
-.a_28 {
-    position: relative;
-    top: -820px;
+#person-photo-6 {
+    top: 160px;
     left: 275px;
-    width: 200px;
-    height: 200px;
     background-color: seashell;
     object-fit: cover;
     background: url(../images/i01.jpg);
     filter: grayscale(100%);
 }
-.a_28 img {
+#person-photo-6 img {
     transform: scale(1);
     transition: all 1s ease-out;
 }
-.a_28:hover {
-    transform: translateY(-60px);
-    filter: grayscale(0%);
-}
-.a_28:hover ~ .a_29 {
+#person-photo-6:hover ~ .a_29 {
     opacity: 1;
     transition: 0.5s;
     transition-delay: 0.5s;
@@ -301,50 +254,33 @@ person-photo {
     height: 250px;
     border: 3px #000 solid;
 }
-.a_29 img {
+/* .a_29 img {
     position: absolute;
     opacity: 0;
-}
+} */
 
-.s_01 {
-    position: relative;
-    top: 25px;
-    left: 150px;
-    width: 150px;
-    height: 50px;
+.subject-title {
     background-color: yellowgreen;
 }
 
-.s_02 {
-    position: relative;
-    top: 100px;
-    left: 150px;
-    width: 1200px;
-    height: 500px;
+.subject-content {
     background-color: yellowgreen;
 }
 
-.ce_01 {
-    position: relative;
-    top: 25px;
-    left: 150px;
-    width: 150px;
-    height: 50px;
+.content-title {
     background-color: orange;
 }
 
-.ce_02 {
+.content-content {
+    margin-top: 50px;
     position: relative;
-    top: 100px;
-    left: 150px;
-    width: 1200px;
     height: 500px;
     /* background-color: orange; */
     display: flex;
     border: 2px solid #000;
 }
 
-.ce_02 .ce_11:nth-child(1) {
+.content-content .ce_11:nth-child(1) {
     background: url(../images/i01.jpg);
     opacity: 0.5;
     border-right: 2px solid rgba(0, 0, 0, 1);
@@ -362,11 +298,11 @@ person-photo {
     transition: 0.5s ease-in-out;
 }
 
-.ce_11:last-child {
+.content-content:last-child {
     border-right: none;
 }
 
-.ce_11:hover {
+.content-content .ce_11:hover {
     flex-grow: 5;
 }
 
@@ -396,26 +332,19 @@ person-photo {
     transform: translateY(0);
 }
 
-.u_01 {
-    position: relative;
-    top: 25px;
-    left: 150px;
-    width: 150px;
-    height: 50px;
-    margin-bottom: 50px;
+.use-title {
     background-color: yellowgreen;
 }
 
-.u_02 {
+.use-content {
+    margin-top: 50px;
     position: relative;
-    left: 150px;
-    width: 1200px;
     height: 500px;
 }
 
 .u_11 {
     display: flex;
-    width: 1200px;
+    /* width: 1200px; */
     height: 500px;
     overflow-x: auto;
     overflow-y: hidden;
@@ -454,20 +383,14 @@ person-photo {
     border: #000 solid;
 }
 
-.ca_01 {
-    position: relative;
-    top: 25px;
-    left: 150px;
-    width: 150px;
-    height: 50px;
+.contact-title {
     background-color: #000;
+    color: #fff;
 }
 
 .ca_02 {
     position: relative;
     top: 20px;
-    left: 150px;
-    width: 1250px;
     height: 620px;
     display: flex;
     justify-content: center;
