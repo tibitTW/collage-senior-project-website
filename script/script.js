@@ -27,14 +27,20 @@ window.onscroll = function () {
     }
 }
 
-// $(document).on('click', 'a[href^="#"]', function (event) {
-//     event.preventDefault()
+$('.menu-bar a').on('click', function (event) {
+    if (this.hash !== '') {
+        event.preventDefault()
+    }
 
-//     $('html, body').animate({
-//         scrolltop: $($.attr(this, 'href')).offset().top
-//     }, 120)
+    var hash = this.hash
+    offsetTopNow =
+        $('html, body').animate({
+            scrollTop: this.getAttribute('href').offset().top
+        })
+    offset: this.getAttribute('href')
+    console.log($(this.getAttribute('href')).offset().top)
 
-// })
+})
 // $('a').on('click', function (event) {
 //     if (this.hash !== '') {
 //         event.preventDefault()
@@ -47,5 +53,20 @@ window.onscroll = function () {
 //     }, 120, function () {
 //         window.location.hash = hash
 //     })
-
 // })
+
+$('.menu-bar a').on('click', function (e) {
+    e.preventDefault();
+    var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+
+    var offset = $(targetSelector).offset().top;
+
+    hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+            offset: offset + 'px',
+            mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+            scrollTop: offset
+        }, 500);
+});

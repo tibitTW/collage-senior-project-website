@@ -99,11 +99,10 @@
     left: 0px;
 }
 .main-box {
-    padding: 60px 0;
-    border: black 1px solid;
+    padding: 120px 0;
     margin: 0 10%;
     width: 80%;
-    height: 100vh;
+    height: 90vh;
 }
 
 .title {
