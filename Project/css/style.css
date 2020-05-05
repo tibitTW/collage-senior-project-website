@@ -169,6 +169,7 @@
     width: 200px;
     height: 200px;
     filter: grayscale(100%);
+    transition: transform 300ms;
 }
 .person-photo:hover {
     transform: translateY(-80px);
@@ -184,7 +185,6 @@
 }
 #person-photo-1:hover ~ .a_29 {
     background: url(../images/02.jpg);
-    opacity: 1;
 }
 
 #person-photo-2 {
@@ -194,7 +194,6 @@
 }
 #person-photo-2:hover ~ .a_29 {
     background: url(../images/03.jpg);
-    opacity: 1;
 }
 
 #person-photo-3 {
@@ -204,7 +203,6 @@
 }
 #person-photo-3:hover ~ .a_29 {
     background: url(../images/04.jpg);
-    opacity: 1;
 }
 
 #person-photo-4 {
@@ -214,7 +212,6 @@
 }
 #person-photo-4:hover ~ .a_29 {
     background: url(../images/05.jpg);
-    opacity: 1;
 }
 #person-photo-5 {
     top: 140px;
@@ -223,12 +220,10 @@
 }
 #person-photo-5:hover ~ .a_29 {
     background: url(../images/06.jpg);
-    opacity: 1;
     transition: 0.5s;
     transition-delay: 0.5s;
     background-size: auto 100%;
 }
-
 #person-photo-6 {
     top: 160px;
     left: 275px;
@@ -242,7 +237,6 @@
     transition: all 1s ease-out;
 }
 #person-photo-6:hover ~ .a_29 {
-    opacity: 1;
     transition: 0.5s;
     transition-delay: 0.5s;
     background-size: auto 100%;
@@ -258,10 +252,6 @@
     height: 250px;
     border: 3px #000 solid;
 }
-/* .a_29 img {
-    position: absolute;
-    opacity: 0;
-} */
 
 .subject-title {
     background-color: yellowgreen;
