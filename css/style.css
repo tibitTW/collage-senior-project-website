@@ -4,6 +4,7 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     user-select: none;
+    scroll-behavior: smooth;
 }
 
 .main {
@@ -11,34 +12,35 @@
 }
 
 .menu-bar {
+    padding: 25px 0;
     width: 100%;
-    height: 125px;
-    /*background-color: skyblue;*/
+    height: 120px;
 }
-
+.menu-bar > div {
+    height: 70px;
+}
 .logo {
     width: 400px;
     height: 100%;
-    line-height: 50px;
-    /* padding:20px; */
-    /*padding:10px red solid;*/
-    margin-right: 50px;
-    margin-left: 20px;
+    margin-left: 3vw;
     float: left;
 }
-
 .menu {
-    width: 1000px;
-    height: 125px;
     text-align: center;
-    line-height: 50px;
-    /* padding:20px; */
-    /*border:2px green solid;*/
-    /*background-color: blanchedalmond;*/
-    float: left;
-    word-spacing: 70px;
-    /* display: inline; */
+    float: right;
+    margin-right: 3vw;
+    /* word-spacing: 70px; */
     text-align: center;
+    line-height: 70px;
+}
+.menu-li-trigger {
+    margin: auto 2.2vw;
+    height: 60px;
+}
+.menu > ul > li {
+    display: inline-block;
+    text-align: center;
+    font-size: 19px;
 }
 .menu a:link {
     text-decoration: none;
@@ -47,18 +49,12 @@
 .menu a:visited {
     color: #000;
 }
-.menu a:hover {
+.menu-li-trigger:hover {
     color: #000;
     border-bottom: black 2px solid;
 }
 .menu a:active {
     color: #000;
-}
-.menu > ul > li {
-    display: inline-block;
-    text-align: center;
-    line-height: 120px;
-    font-size: 19px;
 }
 
 .aside {
@@ -348,43 +344,30 @@
 
 .u_11 {
     display: flex;
-    /* width: 1200px; */
     height: 500px;
     overflow-x: auto;
     overflow-y: hidden;
 }
-
 .u_11::-webkit-scrollbar-button {
     width: 0px;
 }
-
-.u_21 {
+.u_11 > div {
     min-width: 1200px;
     height: 450px;
-    background-color: antiquewhite;
     margin-bottom: 50px;
     border: #000 solid;
+}
+.u_21 {
+    background-color: antiquewhite;
 }
 .u_22 {
-    min-width: 1200px;
-    height: 450px;
     background-color: aqua;
-    margin-bottom: 50px;
-    border: #000 solid;
 }
 .u_23 {
-    min-width: 1200px;
-    height: 450px;
     background-color: aquamarine;
-    margin-bottom: 50px;
-    border: #000 solid;
 }
 .u_24 {
-    min-width: 1200px;
-    height: 450px;
     background-color: blue;
-    margin-bottom: 50px;
-    border: #000 solid;
 }
 
 .contact-title {
