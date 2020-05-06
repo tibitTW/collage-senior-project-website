@@ -8,7 +8,8 @@ window.onscroll = function () {
     menu = document.getElementById('menu')
     menuListTrigger = document.getElementsByClassName('menu-li-trigger')
 
-    if (window.pageYOffset > 80 || document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    yOffset = window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop
+    if (yOffset > 60) {
         menubar.style.height = '80px'
         menubar.style.padding = '20px'
         menu.style.lineHeight = '40px'
@@ -27,46 +28,17 @@ window.onscroll = function () {
     }
 }
 
+// menu link smooth scroll
 $('.menu-bar a').on('click', function (event) {
-    if (this.hash !== '') {
-        event.preventDefault()
+    yOffset = window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop
+    offsetTop = $(this.getAttribute('href')).offset().top
+    if (yOffset > offsetTop) {
+        time = yOffset - offsetTop
+    } else {
+        time = offsetTop - yOffset
     }
 
-    var hash = this.hash
-    offsetTopNow =
-        $('html, body').animate({
-            scrollTop: this.getAttribute('href').offset().top
-        })
-    offset: this.getAttribute('href')
-    console.log($(this.getAttribute('href')).offset().top)
-
+    $('html, body').animate({
+        scrollTop: (offsetTop - 80)
+    }, (time * 0.4))
 })
-// $('a').on('click', function (event) {
-//     if (this.hash !== '') {
-//         event.preventDefault()
-//     }
-
-//     var hash = this.hash
-
-//     $('html, body').animate({
-//         scrolltop: ($(hash).offset().top - 100)
-//     }, 120, function () {
-//         window.location.hash = hash
-//     })
-// })
-
-$('.menu-bar a').on('click', function (e) {
-    e.preventDefault();
-    var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-
-    var offset = $(targetSelector).offset().top;
-
-    hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-            offset: offset + 'px',
-            mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-            scrollTop: offset
-        }, 500);
-});
