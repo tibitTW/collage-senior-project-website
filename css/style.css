@@ -24,7 +24,7 @@
 }
 .logo {
     height: 100%;
-    margin-left: 1.5vw;
+    margin-left: 1.3vw;
     float: left;
 }
 .menu {
@@ -78,9 +78,10 @@
     left: 15px;
     font-size: 20px;
     text-align: center;
+    transition: 0.5s;
 }
 .aside-focus {
-    background-color: #000;
+    background-color: #777;
     color: #fff;
 }
 
@@ -281,7 +282,6 @@
 
 .content-content .ce_11:nth-child(1) {
     background: url(../images/i01.jpg);
-    opacity: 0.5;
     border-right: 2px solid rgba(0, 0, 0, 1);
     background-position: center center;
     background-size: auto 100%;
@@ -289,6 +289,7 @@
 }
 
 .ce_11 {
+    opacity: 0.5;
     position: relative;
     height: 100%;
     flex: 1;
@@ -318,12 +319,12 @@
     transform: translateY(100px);
 }
 
-.ce_02 .ce_11:hover {
+.ce_11:hover {
     opacity: 1;
     transition: 0.5s;
 }
 
-.ce_02 .ce_11:hover .ce_12 {
+.ce_11:hover .ce_12 {
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
