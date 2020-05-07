@@ -145,8 +145,11 @@
     fill: rgba(0, 0, 0, 0);
 }
 
-/* @media screen and (max-width: 1500px) {
-    .menu {
-        display: none;
-    }
-} */
+/* character */
+.char {
+    fill: none;
+    stroke: #777;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 6px;
+}

@@ -64,18 +64,16 @@
 
 .aside {
     position: fixed;
-    top: 200px;
-    left: 0px;
-    width: 50px;
-    height: 550px;
-    line-height: 50px;
+    bottom: 200px;
+    left: 15px;
     color: grey;
 }
 .aside-character {
+    width: 50px;
+    height: 50px;
     margin: 20px 0;
+    padding: 10px;
     position: relative;
-    /* margin: 0 auto; */
-    left: 15px;
     font-size: 20px;
     text-align: center;
     transition: 0.5s;
@@ -83,6 +81,9 @@
 .aside-focus {
     background-color: #777;
     color: #fff;
+}
+.aside-focus * {
+    stroke: white;
 }
 
 .main-box {

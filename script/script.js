@@ -79,9 +79,7 @@ window.onscroll = function () {
         if (focusd_el && +focusd_el.id[16] != 6) {
             focusd_el.classList.remove('aside-focus')
         }
-        if (!focusd_el) {
-            document.getElementById('aside-character-6').classList.add('aside-focus')
-        }
+        document.getElementById('aside-character-6').classList.add('aside-focus')
     }
 }
 
