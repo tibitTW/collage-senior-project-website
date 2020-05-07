@@ -93,3 +93,4 @@ $('.menu-bar a').on('click', function () {
         scrollTop: (offsetTop - 80)
     }, (time * 0.2 + 200))
 })
+
