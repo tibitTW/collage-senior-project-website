@@ -137,10 +137,13 @@ $('.special-thanks-list').click(function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 })
 var instruction_id = 1;
 $('..use-content-previous-btn').click(function () {
 
+=======
+>>>>>>> parent of 9dcf8e2... .
 =======
 >>>>>>> parent of 9dcf8e2... .
 =======

@@ -24,6 +24,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .use-content-show-screen {
     width: 500px;
     height: 100%;
@@ -31,6 +32,10 @@
     background: url(../images/instructions/0001.jpg);
     background-size: 100% 100%;
     box-shadow: 10px 10px 10px 20px;
+=======
+#use-content-box1 {
+    background-color: antiquewhite;
+>>>>>>> parent of 9dcf8e2... .
 =======
 #use-content-box1 {
     background-color: antiquewhite;
