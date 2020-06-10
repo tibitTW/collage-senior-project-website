@@ -86,7 +86,7 @@
     width: 100%;
     z-index: 4;
     background-color: rgba(0, 0, 0, 0.918);
-    color: #fff;
+    color: hsl(60, 100%, 85%);
     height: 100vh;
 }
 .special-thanks-list > h2 {

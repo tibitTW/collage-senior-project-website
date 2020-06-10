@@ -156,8 +156,8 @@
     border-right: opacity none;
 }
 
-.content-content .ce_11:nth-child(1):hover {
-}
+/* .content-content .ce_11:nth-child(1):hover {
+} */
 
 .content-content .ce_11:nth-child(2) {
     background: url(../images/包01.jpg);
@@ -246,32 +246,6 @@
     transform: translateY(0);
 }
 
-.use-content {
-    margin-top: 50px;
-    height: 450px;
-}
-.use-content-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-.use-content-box {
-    display: inline-block;
-    width: 100%;
-    height: 500px;
-    border: #000 solid;
-}
-.use-content-scrollbar {
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    background-color: #000;
-    bottom: 0;
-}
-
-#use-content-box1 {
-    background-color: antiquewhite;
-}
 .u_22 {
     background-color: aqua;
 }
