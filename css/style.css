@@ -389,9 +389,16 @@
     order: 6;
 }
 .p-trigger {
+    letter-spacing: 2px;
+    color: white;
+    font-size: 24px;
     width: 100%;
     text-align: center;
     vertical-align: bottom;
+    transition: 0.5s;
+}
+.p-trigger:hover {
+    color: black;
 }
 .p-trigger:hover > .p-img {
     top: 20px;
@@ -437,7 +444,9 @@
     background-size: 100% 100%;
     filter: grayscale(1);
 }
-.p-name {
-    top: 0px;
-    line-height: 0;
+.about-us-quote {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
 }

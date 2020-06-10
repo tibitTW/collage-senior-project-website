@@ -104,3 +104,24 @@ $('.quit-btn').click(function () {
     $('.video').hide(300)
     $('video').trigger('pause')
 })
+
+quote = document.getElementById('about-us-quote')
+
+$('.p1-trigger').hover(function () {
+    quote.innerHTML = '「沒有你們，沒有我們。」'
+})
+$('.p2-trigger').hover(function () {
+    quote.innerHTML = '「.--- ..- ... - / -.. --- / .. - .-.-.-」'
+})
+$('.p3-trigger').hover(function () {
+    quote.innerHTML = '「一群人可以走得更遠。」'
+})
+$('.p4-trigger').hover(function () {
+    quote.innerHTML = '「可憐哪～～～」'
+})
+$('.p5-trigger').hover(function () {
+    quote.innerHTML = '「日出而作，日落繼續做。」'
+})
+$('.p6-trigger').hover(function () {
+    quote.innerHTML = '「沒有你們，沒有我們。」'
+})
