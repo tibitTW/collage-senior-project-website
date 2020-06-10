@@ -135,10 +135,13 @@ $('.special-thanks-btn').click(function () {
 $('.special-thanks-list').click(function () {
     $('.special-thanks-list').hide(300)
 <<<<<<< HEAD
+<<<<<<< HEAD
 })
 var instruction_id = 1;
 $('..use-content-previous-btn').click(function () {
 
+=======
+>>>>>>> parent of 9dcf8e2... .
 =======
 >>>>>>> parent of 9dcf8e2... .
 })
