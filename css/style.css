@@ -137,6 +137,34 @@
 
 .subject-content {
     background-color: yellowgreen;
+    width: 800px;
+    height: 500px;
+}
+
+.s_11 {
+    background: url(../images/YA01.jpg);
+    position: relative;
+    margin: 20px;
+    float: left;
+}
+
+.s_21 {
+}
+
+.s_22 {
+}
+
+.s_12 {
+    background: url(../images/YA01.jpg);
+    position: relative;
+    margin: 20px;
+    float: left;
+}
+
+.s_23 {
+}
+
+.s_24 {
 }
 
 .content-title {
@@ -146,14 +174,14 @@
 .content-content {
     margin-top: 50 px;
     position: relative;
-    height: 500px;
+    height: 600px;
     /* background-color: orange; */
     display: flex;
     border: 2px solid #000;
 }
 
 .content-content .ce_11:nth-child(1) {
-    background: url(../images/柔01.jpg);
+    background: url(../images/柔03.jpg);
     border-right: 2px solid rgba(0, 0, 0, 1);
     background-position: center center;
     background-size: auto 100%;
@@ -189,14 +217,14 @@
     border-right: opacity none;
 }
 .content-content .ce_11:nth-child(6) {
-    background: url(../images/CE04.jpg);
+    background: url(../images/YA02.jpg);
     border-right: 2px solid rgba(0, 0, 0, 1);
     background-position: center center;
     background-size: auto 100%;
     border-right: opacity none;
 }
 .content-content .ce_11:nth-child(7) {
-    background: url(../images/驊02.jpg);
+    background: url(../images/YA01.jpg);
     border-right: 2px solid rgba(0, 0, 0, 1);
     background-position: center center;
     background-size: auto 100%;
@@ -241,7 +269,7 @@
 
 .ce_11:hover .ce_12 {
     visibility: visible;
-    opacity: 1;
+    opacity: 0.8;
     transition: 0.5s;
     transition-delay: 0.5s;
     transform: translateY(0);
