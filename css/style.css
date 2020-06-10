@@ -391,6 +391,7 @@
 .p-trigger {
     width: 100%;
     text-align: center;
+    vertical-align: bottom;
 }
 .p-trigger:hover > .p-img {
     top: 20px;
@@ -437,5 +438,6 @@
     filter: grayscale(1);
 }
 .p-name {
-    bottom: 0px;
+    top: 0px;
+    line-height: 0;
 }
