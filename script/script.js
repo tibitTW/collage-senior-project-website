@@ -32,7 +32,7 @@ window.onscroll = function () {
         menu.style.lineHeight = '70px'
         menu.style.marginRight = '2vw'
         for (var i = 0; i < 6; i++) {
-            menuListTrigger[i].style.margin = 'auto 2.2vw'
+            menuListTrigger[i].style.margin = 'auto 1.5vw'
         }
     }
 
