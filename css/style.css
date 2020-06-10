@@ -156,10 +156,6 @@
     border-right: opacity none;
 }
 
-.content-content .ce_11:nth-child(1):hover {
-    animation: change;
-}
-
 .content-content .ce_11:nth-child(2) {
     background: url(../images/包01.jpg);
     border-right: 2px solid rgba(0, 0, 0, 1);
