@@ -141,12 +141,12 @@ var instruction_id = 1;
 $('.use-content-previous-btn').click(function () {
     if (instruction_id > 1) {
         instruction_id--;
-        $('.use-content-show-screen').css('background', 'url(../images/instructions/000' + instruction_id + '.jpg)').css('background-size', '100% 100%')
+        $('.use-content-show-screen').css('background', 'url(./images/instructions/000' + instruction_id + '.jpg)').css('background-size', '100% 100%')
     }
 })
 $('.use-content-next-btn').click(function () {
     if (instruction_id < 8) {
         instruction_id++;
-        $('.use-content-show-screen').css('background', 'url(../images/instructions/000' + instruction_id + '.jpg)').css('background-size', '100% 100%')
+        $('.use-content-show-screen').css('background', 'url(./images/instructions/000' + instruction_id + '.jpg)').css('background-size', '100% 100%')
     }
 })
