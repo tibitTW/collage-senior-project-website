@@ -1,51 +1,37 @@
 .use-content {
     margin-top: 50px;
-    height: 450px;
-}
-.use-content-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-.use-content-box {
-    display: inline-block;
-    width: 100%;
     height: 500px;
-    border: #000 solid;
-}
-.use-content-scrollbar {
-    position: absolute;
     width: 100%;
-    height: 5px;
-    background-color: #000;
-    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.use-content > div {
+    display: inline-block;
+}
+.use-content-btn {
+    height: 200px;
+    width: 100px;
+}
+.use-content-previous-btn {
+    border-radius: 20px 0 0 20px;
+    background: url(../icons/previus.png) #ddd;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.use-content-next-btn {
+    border-radius: 0 20px 20px 0;
+    background: url(../icons/next.png) #ddd;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .use-content-show-screen {
     width: 500px;
     height: 100%;
     margin: 0 100px;
-    background: url(../images/instructions/0001.jpg);
-    background-size: 100% 100%;
-    box-shadow: 10px 10px 10px 20px;
-=======
-#use-content-box1 {
-    background-color: antiquewhite;
->>>>>>> parent of 9dcf8e2... .
-=======
-#use-content-box1 {
-    background-color: antiquewhite;
->>>>>>> parent of 9dcf8e2... .
-=======
-#use-content-box1 {
-    background-color: antiquewhite;
->>>>>>> parent of 9dcf8e2... .
-=======
-#use-content-box1 {
-    background-color: antiquewhite;
->>>>>>> parent of 9dcf8e2... .
+    background: url(../);
 }

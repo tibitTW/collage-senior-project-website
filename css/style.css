@@ -149,16 +149,15 @@
 }
 
 .content-content .ce_11:nth-child(1) {
-    background: url(../images/柔03.jpg);
+    background: url(../images/柔01.jpg);
     border-right: 2px solid rgba(0, 0, 0, 1);
     background-position: center center;
     background-size: auto 100%;
     border-right: opacity none;
 }
 
-.content-content .ce_11:nth-child(1):hover {
-    animation: change;
-}
+/* .content-content .ce_11:nth-child(1):hover {
+} */
 
 .content-content .ce_11:nth-child(2) {
     background: url(../images/包01.jpg);
@@ -189,14 +188,14 @@
     border-right: opacity none;
 }
 .content-content .ce_11:nth-child(6) {
-    background: url(../images/YA02.jpg);
+    background: url(../images/CE04.jpg);
     border-right: 2px solid rgba(0, 0, 0, 1);
     background-position: center center;
     background-size: auto 100%;
     border-right: opacity none;
 }
 .content-content .ce_11:nth-child(7) {
-    background: url(../images/YA01.jpg);
+    background: url(../images/驊02.jpg);
     border-right: 2px solid rgba(0, 0, 0, 1);
     background-position: center center;
     background-size: auto 100%;
@@ -226,7 +225,7 @@
     bottom: 0;
     margin: 40px;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #000;
     color: #fff;
     visibility: hidden;
     opacity: 0;

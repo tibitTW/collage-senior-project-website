@@ -3,26 +3,22 @@
     <head>
         <meta charset="UTF-8" />
         <style>
-            * {
-                margin: 0;
-                padding: 0;
+            .div1 {
+                width: 100px;
+                height: 100px;
+                background-color: #ddd;
             }
-            body {
-                text-align: center;
-            }
-            .video {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                margin: auto 0;
+            .div1::after {
+                content: 'hahahahaha';
+                display: block;
+                position: relative;
+                width: 100px;
+                height: 100px;
+                background-color: #f00;
             }
         </style>
     </head>
     <body>
-        <div class="video">
-            <video width="1280" height="720" onclick="this.play()">
-                <source type="video/mp4" src="./videos/final.mp4" />
-            </video>
-        </div>
+        <div class="div1"></div>
     </body>
 </html>
