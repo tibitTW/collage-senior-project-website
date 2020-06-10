@@ -33,5 +33,7 @@
     width: 500px;
     height: 100%;
     margin: 0 100px;
-    background: url(../);
+    background: url(../images/instructions/0001.jpg);
+    background-size: 100% 100%;
+    transition: 0.5s;
 }
