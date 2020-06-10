@@ -1,114 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    user-select: none;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-.main {
-    display: none;
-}
-
-.menu-bar {
-    z-index: 2;
-    padding: 25px 0;
-    width: 100%;
-    height: 120px;
-    position: fixed;
-    background: #ccc;
-    transition: 0.3s;
-    box-shadow: 0px 6px 20px 2px rgba(110, 110, 110, 0.637);
-    border-radius: 0 10px 10px 0;
-}
-.menu-bar-logo {
-    height: 100%;
-    margin-left: 1.3vw;
-    float: left;
-}
-.menu {
-    text-align: center;
-    float: right;
-    margin-right: 2vw;
-    /* word-spacing: 70px; */
-    text-align: center;
-    transition: 0.3s;
-    line-height: 70px;
-    font-size: 36px;
-}
-.menu-li-trigger {
-    margin: auto 2vw;
-    transition: 0.3s;
-    height: 100%;
-}
-.menu > ul > li {
-    display: inline-block;
-    text-align: center;
-    font-size: 19px;
-}
-.menu a:link {
-    text-decoration: none;
-    color: #000;
-}
-.menu a:visited {
-    color: #000;
-}
-.menu-li-trigger:hover {
-    transition: 0s;
-    color: #000;
-    border-bottom: black 2px solid;
-}
-.menu a:active {
-    color: #000;
-}
-
-.aside {
-    position: fixed;
-    bottom: 100px;
-    left: 15px;
-    color: grey;
-}
-.aside-character {
-    width: 40px;
-    height: 40px;
-    margin: 3vh 0;
-    padding: 5px;
-    position: relative;
-    font-size: 20px;
-    text-align: center;
-    transition: 0.5s;
-    border-radius: 10%;
-}
-.aside-focus {
-    background-color: #777;
-    color: #fff;
-}
-.aside-focus * {
-    stroke: white;
-}
-
-.main-box {
-    padding: 120px 0;
-    margin: 0 auto;
-    width: 70%;
-    height: 100vh;
-}
-.main-content {
-    width: 100%;
-    position: absolute;
-    top: 150px;
-    left: 0px;
-}
 .title {
-    width: 150px;
+    width: 100%;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    font-size: 28px;
+    font-size: 40px;
+    margin-bottom: 80px;
 }
 .content {
     padding: 25px;
@@ -117,14 +13,6 @@
     margin-top: 50px;
     height: 500px;
 }
-
-.home-title {
-    background-color: slateblue;
-}
-/* .home-content {
-    position: absolute;
-    background-color: slateblue;
-} */
 
 .about-title {
     background-color: seagreen;
@@ -158,14 +46,24 @@
     transition: 0.5s;
 }
 .main-video1:hover {
-    filter: brightness(0.5);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/20200320_180208.jpg);
+    background-size: auto 100%;
+
+    /* filter: brightness(0.5); */
+}
+.main-video1:hover .play-button {
+    display: block;
 }
 .play-button {
+    cursor: pointer;
+    display: none;
     width: 100%;
     height: 100%;
     background-color: #fff;
-    clip-path: polygon(39% 38%, 39% 62%, 60% 50%);
+    clip-path: polygon(42% 43%, 42% 57%, 54% 50%);
 }
+
 .a_01 {
     position: relative;
     width: 1100px;
@@ -343,9 +241,9 @@
     background-color: blue;
 }
 
-.contact-title {
+/* .contact-title {
     background-color: seagreen;
-}
+} */
 
 .contact-main {
     margin-top: 20px;
@@ -483,3 +381,61 @@
     position: absolute;
     opacity: 0;
 } */
+
+.about-us {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    order: 6;
+}
+.p-trigger {
+    width: 100%;
+    text-align: center;
+}
+.p-trigger:hover > .p-img {
+    top: 20px;
+    filter: grayscale(0);
+}
+.p-img {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    top: 100px;
+    transition: 0.5s;
+}
+.p1-img {
+    background: url(../images/P1.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.p2-img {
+    background: url(../images/P2.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.p3-img {
+    background: url(../images/P3.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.p4-img {
+    background: url(../images/P4.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.p5-img {
+    background: url(../images/P5.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.p6-img {
+    background: url(../images/P6.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.p-name {
+    bottom: 0px;
+}

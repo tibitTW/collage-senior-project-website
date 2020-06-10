@@ -1,0 +1,51 @@
+.menu-bar {
+    z-index: 2;
+    padding: 25px 0;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    background: #ccc;
+    transition: 0.3s;
+    box-shadow: 0px 6px 20px 2px rgba(110, 110, 110, 0.637);
+    border-radius: 0 0 10px 10px;
+}
+.menu-bar-logo {
+    height: 100%;
+    margin-left: 1.3vw;
+    float: left;
+}
+.menu {
+    text-align: center;
+    float: right;
+    margin-right: 2vw;
+    /* word-spacing: 70px; */
+    text-align: center;
+    transition: 0.3s;
+    line-height: 70px;
+    font-size: 36px;
+}
+.menu-li-trigger {
+    margin: auto 2vw;
+    transition: 0.3s;
+    height: 100%;
+}
+.menu > ul > li {
+    display: inline-block;
+    text-align: center;
+    font-size: 19px;
+}
+.menu a:link {
+    text-decoration: none;
+    color: #000;
+}
+.menu a:visited {
+    color: #000;
+}
+.menu-li-trigger:hover {
+    transition: 0s;
+    color: #000;
+    border-bottom: black 2px solid;
+}
+.menu a:active {
+    color: #000;
+}

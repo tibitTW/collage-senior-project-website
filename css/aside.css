@@ -1,0 +1,24 @@
+.aside {
+    position: fixed;
+    bottom: 100px;
+    color: grey;
+    right: 15px;
+}
+.aside-character {
+    width: 40px;
+    height: 40px;
+    margin: 3vh 0;
+    padding: 5px;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10%;
+}
+.aside-focus {
+    background-color: #777;
+    color: #fff;
+}
+.aside-focus * {
+    stroke: white;
+}

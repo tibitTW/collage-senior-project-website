@@ -2,8 +2,13 @@
 <html>
     <head>
         <title>屌爆專題</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/menubar.css" />
         <link rel="stylesheet" href="css/svg.css" />
-        <link rel="stylesheet" type="" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/aside.css" />
+        <link rel="stylesheet" href="css/video.css" />
+
         <meta charset="utf-8" />
     </head>
 
@@ -172,15 +177,10 @@
                 />
             </svg>
         </div>
+
         <div class="main">
             <div class="menu-bar" id="menu-bar">
-                <div class="menu-bar-logo">
-                    <img
-                        class="menu-bar-logo"
-                        src="svg/logo-name.svg"
-                        alt="LOGO"
-                    />
-                </div>
+                <img class="menu-bar-logo" src="svg/logo-name.svg" alt="LOGO" />
 
                 <div class="menu" id="menu">
                     <ul>
@@ -225,12 +225,12 @@
             <div class="main-content">
                 <div class="main-box" id="home">
                     <div class="title home-title">
-                        HOME
+                        智慧，得來不易。
                     </div>
                     <div class="content home-content">
                         <div class="main-photo1"></div>
                         <div class="main-video1">
-                            <div class="play-button"></div>
+                            <div id="play-button" class="play-button"></div>
                         </div>
                     </div>
                 </div>
@@ -404,80 +404,26 @@
                     <div class="title contact-title">
                         CONTACT
                     </div>
-
-                    <div class="contact-main">
-                        <div class="ca_11">
-                            <div class="ca_21"></div>
-
-                            <div class="ca_22">
-                                <h2>我就銲</h2>
-                                <p>自動化控制氬銲機系統結合影像辨識之研究</p>
-                            </div>
+                    <div class="about-us">
+                        <div class="about-us-title"></div>
+                        <div class="p-trigger p1-trigger">
+                            <div class="p-img p1-img"></div>
+                            <p class="p-name">游伯軒</p>
                         </div>
-
-                        <div class="ca_12">
-                            <div class="person-photo" id="person-photo-1">
-                                <img
-                                    src="../images/C01.jpg"
-                                    alt="Paris"
-                                    width=" 200px"
-                                    height=" 200px"
-                                />
-                            </div>
-
-                            <div class="person-photo" id="person-photo-2">
-                                <img
-                                    src="../images/C02.jpg"
-                                    alt="Paris"
-                                    width="200"
-                                    height="200"
-                                />
-                            </div>
-
-                            <div class="person-photo" id="person-photo-3">
-                                <img
-                                    src="../images/C03.jpg"
-                                    alt="Paris"
-                                    width="200"
-                                    height="200"
-                                />
-                            </div>
-
-                            <div class="person-photo" id="person-photo-4">
-                                <img
-                                    src="../images/C04.jpg"
-                                    alt="Paris"
-                                    width="200"
-                                    height="200"
-                                />
-                            </div>
-
-                            <div class="person-photo" id="person-photo-5">
-                                <img
-                                    src="../images/C05.jpg"
-                                    alt="Paris"
-                                    width="200"
-                                    height="200"
-                                />
-                            </div>
-
-                            <div class="person-photo" id="person-photo-6">
-                                <img
-                                    src="../images/C06.jpg"
-                                    alt="Paris"
-                                    width="200"
-                                    height="200"
-                                />
-                            </div>
-
-                            <div class="ca_29">
-                                <!-- <img src="images/i01.jpg" />
-                            <img src="images/02.jpg" />
-                            <img src="images/03.jpg" />
-                            <img src="images/04.jpg" />
-                            <img src="images/05.jpg" />
-                            <img src="images/06.jpg" /> -->
-                            </div>
+                        <div class="p-trigger p2-trigger">
+                            <div class="p-img p2-img"></div>
+                        </div>
+                        <div class="p-trigger p3-trigger">
+                            <div class="p-img p3-img"></div>
+                        </div>
+                        <div class="p-trigger p4-trigger">
+                            <div class="p-img p4-img"></div>
+                        </div>
+                        <div class="p-trigger p5-trigger">
+                            <div class="p-img p5-img"></div>
+                        </div>
+                        <div class="p-trigger p6-trigger">
+                            <div class="p-img p6-img"></div>
                         </div>
                     </div>
                 </div>
@@ -592,7 +538,12 @@
                 </div>
             </div>
         </div>
-
+        <div class="video">
+            <div class="quit-btn"></div>
+            <video id="video">
+                <source type="video/mp4" src="./videos/final.mp4" />
+            </video>
+        </div>
         <script src="script/jquery-3.4.1.min.js"></script>
         <script src="script/script.js"></script>
     </body>
