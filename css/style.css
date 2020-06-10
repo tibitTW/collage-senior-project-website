@@ -1,9 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
     user-select: none;
+}
+p {
+    overflow-wrap: break-word;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -127,146 +130,82 @@
 }
 
 .about-main {
-    margin-top: 20px;
-    height: 620px;
-    /*background-color: seagreen;*/
+    background-color: seagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.a_11 {
-    width: 600px;
-    height: 650px;
-    /*background-color: springgreen;*/
-    float: left;
-}
-.a_21 {
+.a_01 {
     position: relative;
-    width: 100%;
-    height: 450px;
-    background-color: sandybrown;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
 }
-.a_22 {
-    margin-top: 20px;
+
+.a_01 .a11 {
     position: relative;
-    width: 100%;
-    height: 160px;
-    background-color: sandybrown;
+    max-width: 300px;
+    height: 215px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
 }
 
-.a_12 {
+.a_01 .a11:hover {
+    height: 420px;
+}
+
+.a_01 .a_11 .a_21 {
     position: relative;
-    width: 500px;
-    height: 650px;
-    background-color: skyblue;
-    float: right;
-    /* right: 80px; */
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.person-photo {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    filter: grayscale(100%);
-    transition: 0.3s;
-}
-.person-photo:hover {
-    transform: translateY(-80px);
-    filter: grayscale(0);
+.a_01 .a_11 .a_21 img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
-/*上差-180px  左差50px*/
-#person-photo-1 {
-    top: 60px;
-    left: 25px;
-    background-size: cover;
-    background: url(../images/02.jpg);
-}
-#person-photo-1:hover ~ .a_29 {
-    background: url(../images/02.jpg);
-    opacity: 1;
-}
-
-#person-photo-2 {
-    top: 80px;
-    left: 75px;
-    background: url(../images/03.jpg);
-}
-#person-photo-2:hover ~ .a_29 {
-    background: url(../images/03.jpg);
-    opacity: 1;
-}
-
-#person-photo-3 {
-    top: 100px;
-    left: 125px;
-    background: url(../images/04.jpg);
-}
-#person-photo-3:hover ~ .a_29 {
-    background: url(../images/04.jpg);
-    opacity: 1;
-}
-
-#person-photo-4 {
-    top: 120px;
-    left: 175px;
-    background: url(../images/05.jpg);
-}
-#person-photo-4:hover ~ .a_29 {
-    background: url(../images/05.jpg);
-    opacity: 1;
-}
-#person-photo-5 {
-    top: 140px;
-    left: 225px;
-    background: url(../images/06.jpg);
-}
-#person-photo-5:hover ~ .a_29 {
-    background: url(../images/06.jpg);
-    opacity: 1;
-    transition: 0.5s;
-    transition-delay: 0.5s;
-    background-size: auto 100%;
-}
-
-#person-photo-6 {
-    top: 160px;
-    left: 275px;
-    background-color: seashell;
-    object-fit: cover;
-    background: url(../images/i01.jpg);
-    filter: grayscale(100%);
-}
-#person-photo-6 img {
-    transform: scale(1);
-    transition: all 1s ease-out;
-}
-#person-photo-6:hover ~ .a_29 {
-    opacity: 1;
-    transition: 0.5s;
-    transition-delay: 0.5s;
-    background-size: auto 100%;
-    background: url(../images/i01.jpg);
-}
-.a_29 {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
-    width: 250px;
-    height: 250px;
-    border: 3px #000 solid;
-}
-/* .a_29 img {
-    position: absolute;
+.a_01 .a_11 .a_12 {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
     opacity: 0;
-} */
+    transition: 0.3s ease-in-out;
+}
+
+.a_01 .a_11:hover .a_12 {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
 
 .subject-title {
     background-color: yellowgreen;
 }
 
 .subject-content {
+    display: flex;
     background-color: yellowgreen;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
 }
 
 .content-title {
@@ -274,7 +213,7 @@
 }
 
 .content-content {
-    margin-top: 50px;
+    margin-top: 50 px;
     position: relative;
     height: 500px;
     /* background-color: orange; */
@@ -375,35 +314,141 @@
 }
 
 .contact-title {
-    background-color: #000;
-    color: #fff;
+    background-color: seagreen;
 }
 
-.ca_02 {
-    position: relative;
-    top: 20px;
+.contact-main {
+    margin-top: 20px;
     height: 620px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 1100;
+    /*background-color: seagreen;*/
 }
 
 .ca_11 {
+    width: 600px;
+    height: 650px;
+    /*background-color: springgreen;*/
+    float: left;
+}
+.ca_21 {
     position: relative;
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    height: 450px;
+    background-color: sandybrown;
+}
+.ca_22 {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 160px;
+    background-color: sandybrown;
 }
 
-.ca_11 .ca_21 {
-    width: 200px;
+.ca_12 {
+    position: relative;
+    width: 450px;
+    height: 650px;
+    background-color: skyblue;
+    float: left;
+    /* right: 80px; */
 }
 
-.ca_11 .ca_22 {
+.person-photo {
+    position: absolute;
     width: 200px;
+    height: 200px;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+.person-photo:hover {
+    transform: translateY(-95px);
+    filter: grayscale(0);
 }
 
-.ca_11 .ca_23 {
-    width: 200px;
+/*上差-180px  左差50px*/
+#person-photo-1 {
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background: url(../images/C01.jpg);
 }
+#person-photo-1:hover ~ .ca_29 {
+    background: url(../images/C01.jpg);
+    opacity: 1;
+}
+
+#person-photo-2 {
+    top: 50px;
+    left: 60px;
+    background: url(../images/C02.jpg);
+}
+#person-photo-2:hover ~ .ca_29 {
+    background: url(../images/C02.jpg);
+    opacity: 1;
+}
+
+#person-photo-3 {
+    top: 100px;
+    left: 120px;
+    background: url(../images/C03.jpg);
+}
+#person-photo-3:hover ~ .ca_29 {
+    background: url(../images/C03.jpg);
+    opacity: 1;
+}
+
+#person-photo-4 {
+    top: 120px;
+    left: 175px;
+    background: url(../images/C04.jpg);
+}
+#person-photo-4:hover ~ .ca_29 {
+    background: url(../images/C04.jpg);
+    opacity: 1;
+}
+#person-photo-5 {
+    top: 140px;
+    left: 225px;
+    background: url(../images/C05.jpg);
+}
+#person-photo-5:hover ~ .ca_29 {
+    background: url(../images/C05.jpg);
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    background-size: auto 100%;
+}
+
+#person-photo-6 {
+    top: 160px;
+    left: 275px;
+    background-color: seashell;
+    object-fit: cover;
+    background: url(../images/C06.jpg);
+    filter: grayscale(100%);
+}
+#person-photo-6 img {
+    transform: scale(1);
+    transition: all 1s ease-out;
+}
+#person-photo-6:hover ~ .ca_29 {
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    background-size: auto 100%;
+    background: url(../images/C06.jpg);
+}
+.ca_29 {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border: 3px #000 solid;
+}
+/* .ca_29 img {
+    position: absolute;
+    opacity: 0;
+} */
