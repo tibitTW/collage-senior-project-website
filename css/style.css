@@ -1,13 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     user-select: none;
 }
-p {
-    overflow-wrap: break-word;
-}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -24,8 +22,10 @@ p {
     position: fixed;
     background: #ccc;
     transition: 0.3s;
+    box-shadow: 0px 6px 20px 2px rgba(110, 110, 110, 0.637);
+    border-radius: 0 10px 10px 0;
 }
-.logo {
+.menu-bar-logo {
     height: 100%;
     margin-left: 1.3vw;
     float: left;
@@ -38,9 +38,10 @@ p {
     text-align: center;
     transition: 0.3s;
     line-height: 70px;
+    font-size: 36px;
 }
 .menu-li-trigger {
-    margin: auto 2.2vw;
+    margin: auto 2vw;
     transition: 0.3s;
     height: 100%;
 }
@@ -67,14 +68,14 @@ p {
 
 .aside {
     position: fixed;
-    top: 200px;
+    bottom: 100px;
     left: 15px;
     color: grey;
 }
 .aside-character {
     width: 40px;
     height: 40px;
-    margin: 50px 0;
+    margin: 3vh 0;
     padding: 5px;
     position: relative;
     font-size: 20px;
@@ -110,7 +111,7 @@ p {
     font-size: 28px;
 }
 .content {
-    padding: 10px;
+    padding: 25px;
     overflow-wrap: break-word;
     font-size: 20px;
     margin-top: 50px;
@@ -120,10 +121,10 @@ p {
 .home-title {
     background-color: slateblue;
 }
-.home-content {
-    /* position: absolute; */
+/* .home-content {
+    position: absolute;
     background-color: slateblue;
-}
+} */
 
 .about-title {
     background-color: seagreen;
@@ -136,6 +137,35 @@ p {
     align-items: center;
 }
 
+.home-content > div {
+    display: inline-block;
+}
+.main-photo1 {
+    width: 450px;
+    height: 100%;
+    clip-path: polygon(0 50%, 84% 100%, 84% 0);
+    background: url(../images/20200320_180208.jpg);
+    background-size: auto 100%;
+    background-position: center;
+}
+.main-video1 {
+    float: right;
+    width: 450px;
+    height: 100%;
+    clip-path: polygon(16% 0, 16% 100%, 100% 50%);
+    background: url(../images/20200320_180208.jpg);
+    background-size: auto 100%;
+    transition: 0.5s;
+}
+.main-video1:hover {
+    filter: brightness(0.5);
+}
+.play-button {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    clip-path: polygon(39% 38%, 39% 62%, 60% 50%);
+}
 .a_01 {
     position: relative;
     width: 1100px;
@@ -354,6 +384,7 @@ p {
 }
 
 .person-photo {
+    border-radius: 50%;
     position: absolute;
     width: 200px;
     height: 200px;

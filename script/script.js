@@ -90,7 +90,7 @@ $('.menu-bar a').on('click', function () {
     var time = (yOffset > offsetTop) ? (yOffset - offsetTop) : (offsetTop - yOffset)
 
     $('html, body').animate({
-        scrollTop: (offsetTop - 80)
+        scrollTop: (offsetTop - 25)
     }, (time * 0.2 + 200))
 })
 
