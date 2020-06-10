@@ -30,7 +30,7 @@ window.onscroll = function () {
         menuBar.style.height = '120px'
         menuBar.style.padding = '25px'
         menu.style.lineHeight = '70px'
-        menu.style.marginRight = '3vw'
+        menu.style.marginRight = '2vw'
         for (var i = 0; i < 6; i++) {
             menuListTrigger[i].style.margin = 'auto 2.2vw'
         }
@@ -90,7 +90,17 @@ $('.menu-bar a').on('click', function () {
     var time = (yOffset > offsetTop) ? (yOffset - offsetTop) : (offsetTop - yOffset)
 
     $('html, body').animate({
-        scrollTop: (offsetTop - 80)
+        scrollTop: (offsetTop - 25)
     }, (time * 0.2 + 200))
 })
 
+$('.play-button').on('click', function () {
+    $('.video').show(300)
+})
+
+$('video').click(function () { this.paused ? this.play() : this.pause(); });
+
+$('.quit-btn').click(function () {
+    $('.video').hide(300)
+    $('video').trigger('pause')
+})
