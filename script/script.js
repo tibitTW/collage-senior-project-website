@@ -102,7 +102,9 @@ $('video').click(function () { this.paused ? this.play() : this.pause(); });
 
 $('.quit-btn').click(function () {
     $('.video').hide(300)
-    $('video').trigger('pause')
+    $('#video').trigger('pause')
+    var video = document.getElementById('video')
+    video.currentTime = 0
 })
 
 quote = document.getElementById('about-us-quote')

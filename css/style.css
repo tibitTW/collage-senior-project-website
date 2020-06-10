@@ -4,9 +4,10 @@
     line-height: 50px;
     text-align: center;
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-family: 'Poppins', sans-serif;
 }
+
 .content {
     padding: 25px;
     overflow-wrap: break-word;
@@ -14,17 +15,10 @@
     margin-top: 20px;
     height: 500px;
 }
-.about-title {
-    background-color: seagreen;
-}
 
-.about-main {
-    background-color: seagreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.home-title {
+    margin-bottom: 40px;
 }
-
 .home-content > div {
     display: inline-block;
 }
@@ -33,24 +27,24 @@
     height: 100%;
     clip-path: polygon(0 50%, 84% 100%, 84% 0);
     background: url(../images/20200320_180208.jpg);
-    background-size: auto 100%;
-    background-position: center;
+    background-size: auto 140%;
+    background-position: 60% 0;
 }
 .main-video1 {
     float: right;
     width: 450px;
     height: 100%;
     clip-path: polygon(16% 0, 16% 100%, 100% 50%);
-    background: url(../images/20200320_180208.jpg);
+    background: url(../images/home1.jpg);
     background-size: auto 100%;
+    background-position: 50% 0%;
     transition: 0.5s;
 }
 .main-video1:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../images/20200320_180208.jpg);
+        url(../images/home1.jpg);
     background-size: auto 100%;
-
-    /* filter: brightness(0.5); */
+    background-position: 50% 0%;
 }
 .main-video1:hover .play-button {
     display: block;
@@ -62,13 +56,6 @@
     height: 100%;
     background-color: #fff;
     clip-path: polygon(42% 43%, 42% 57%, 54% 50%);
-}
-
-.about-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: sandybrown;
 }
 
 .a_11 {
@@ -138,10 +125,6 @@
 
 .subject-content {
     background-color: yellowgreen;
-}
-
-.content-title {
-    background-color: orange;
 }
 
 .content-content {
