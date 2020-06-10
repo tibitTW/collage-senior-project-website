@@ -135,3 +135,7 @@ $('.special-thanks-btn').click(function () {
 $('.special-thanks-list').click(function () {
     $('.special-thanks-list').hide(300)
 })
+var instruction_id = 1;
+$('..use-content-previous-btn').click(function () {
+
+})
