@@ -108,7 +108,7 @@ $('.quit-btn').click(function () {
 quote = document.getElementById('about-us-quote')
 
 $('.p1-trigger').hover(function () {
-    quote.innerHTML = '「沒有你們，沒有我們。」'
+    quote.innerHTML = '「完美，源自於不必要的堅持。」'
 })
 $('.p2-trigger').hover(function () {
     quote.innerHTML = '「.--- ..- ... - / -.. --- / .. - .-.-.-」'
@@ -124,4 +124,14 @@ $('.p5-trigger').hover(function () {
 })
 $('.p6-trigger').hover(function () {
     quote.innerHTML = '「沒有你們，沒有我們。」'
+})
+$('.about-us').mouseleave(function () {
+    quote.innerHTML = '&emsp;'
+})
+
+$('.special-thanks-btn').click(function () {
+    $('.special-thanks-list').show(500)
+})
+$('.special-thanks-list').click(function () {
+    $('.special-thanks-list').hide(300)
 })

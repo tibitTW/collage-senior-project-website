@@ -201,10 +201,6 @@
     transform: translateY(0);
 }
 
-.use-title {
-    background-color: yellowgreen;
-}
-
 .use-content {
     margin-top: 50px;
     height: 450px;
@@ -376,77 +372,4 @@
     width: 250px;
     height: 250px;
     border: 3px #000 solid;
-}
-/* .ca_29 img {
-    position: absolute;
-    opacity: 0;
-} */
-
-.about-us {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    order: 6;
-}
-.p-trigger {
-    letter-spacing: 2px;
-    color: white;
-    font-size: 24px;
-    width: 100%;
-    text-align: center;
-    vertical-align: bottom;
-    transition: 0.5s;
-}
-.p-trigger:hover {
-    color: black;
-}
-.p-trigger:hover > .p-img {
-    top: 20px;
-    filter: grayscale(0);
-}
-.p-img {
-    position: relative;
-    margin: 0 auto;
-    display: block;
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-    top: 100px;
-    transition: 0.5s;
-}
-.p1-img {
-    background: url(../images/P1.jpg);
-    background-size: 100% 100%;
-    filter: grayscale(1);
-}
-.p2-img {
-    background: url(../images/P2.jpg);
-    background-size: 100% 100%;
-    filter: grayscale(1);
-}
-.p3-img {
-    background: url(../images/P3.jpg);
-    background-size: 100% 100%;
-    filter: grayscale(1);
-}
-.p4-img {
-    background: url(../images/P4.jpg);
-    background-size: 100% 100%;
-    filter: grayscale(1);
-}
-.p5-img {
-    background: url(../images/P5.jpg);
-    background-size: 100% 100%;
-    filter: grayscale(1);
-}
-.p6-img {
-    background: url(../images/P6.jpg);
-    background-size: 100% 100%;
-    filter: grayscale(1);
-}
-.about-us-quote {
-    margin-top: 40px;
-    width: 100%;
-    text-align: center;
-    font-size: 28px;
 }
