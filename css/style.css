@@ -5,10 +5,10 @@
     text-align: center;
     font-size: 40px;
     margin-bottom: 60px;
-    font-family: 'Poppins', sans-serif, 'Microsoft JhengHei';
+    font-family: "Poppins", sans-serif, "Microsoft JhengHei";
 }
 .home-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .content {
     padding: 25px;
@@ -122,36 +122,38 @@
 }
 
 .subject-title {
-    background-color: yellowgreen;
 }
 
 .subject-content {
     background-color: yellowgreen;
-    width: 800px;
-    height: 500px;
 }
 
 .s_11 {
-    background: url(../images/YA01.jpg);
-    position: relative;
-    margin: 20px;
+    display: inline-block;
     float: left;
 }
 
 .s_21 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: url(../images/YA01.jpg);
+    background-size: cover;
+    margin: 20px;
 }
 
 .s_22 {
 }
 
 .s_12 {
-    background: url(../images/YA01.jpg);
-    position: relative;
-    margin: 20px;
     float: left;
 }
 
 .s_23 {
+    position: relative;
+    background: url(../images/YA01.jpg);
+    position: relative;
+    margin: 20px;
 }
 
 .s_24 {
