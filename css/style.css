@@ -1,3 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main {
+    display: none;
+}
+.main-box {
+    padding: 100px 0;
+    margin: 0 auto;
+    width: 70%;
+}
+.main-content {
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+}
+.para-english {
+    font-family: serif;
+    letter-spacing: 1.5px;
+    margin: 20px;
+    font-size: 28px;
+}
+
 .title {
     letter-spacing: 4px;
     width: 100%;
@@ -266,4 +298,296 @@
     margin-top: 20px;
     height: 620px;
     width: 1100;
+}
+.use-title {
+    font-family: 'Microsoft JhengHei';
+}
+.use-content {
+    margin-top: 50px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.use-content > div {
+    display: inline-block;
+}
+.use-content-btn {
+    height: 200px;
+    width: 100px;
+}
+.use-content-previous-btn {
+    border-radius: 20px 0 0 20px;
+    background: url(../icons/previus.png) #ddd;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.use-content-next-btn {
+    border-radius: 0 20px 20px 0;
+    background: url(../icons/next.png) #ddd;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: right;
+}
+
+.use-content-show-screen {
+    width: 500px;
+    height: 100%;
+    margin: 0 100px;
+    background: url(../images/instructions/0001.jpg);
+    background-size: 100% 100%;
+    transition: 0.5s;
+}
+.video {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 15, 15, 0.9);
+    z-index: 3;
+}
+.menu-bar {
+    z-index: 2;
+    padding: 25px 0;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    background: #ccc;
+    transition: 0.3s;
+    box-shadow: 0px 6px 20px 2px rgba(110, 110, 110, 0.637);
+    border-radius: 0 0 10px 10px;
+    font-family: 'Microsoft JhengHei';
+}
+.menu-bar-logo {
+    height: 100%;
+    margin-left: 1.3vw;
+    float: left;
+}
+.menu {
+    text-align: center;
+    float: right;
+    margin-right: 2vw;
+    text-align: center;
+    transition: 0.3s;
+    line-height: 70px;
+    font-size: 36px;
+}
+.menu-li-trigger {
+    margin: auto 1.5vw;
+    transition: 0.3s;
+    height: 100%;
+}
+.menu > ul > li {
+    display: inline-block;
+    text-align: center;
+    font-size: 19px;
+}
+.menu a:link {
+    text-decoration: none;
+    color: #000;
+}
+.menu a:visited {
+    color: #000;
+}
+.menu-li-trigger:hover {
+    transition: 0s;
+    color: #000;
+    border-bottom: black 2px solid;
+}
+.menu a:active {
+    color: #000;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+.quit-btn {
+    z-index: 4;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    right: 40px;
+    top: 40px;
+    background: url(../icons/close-btn.jpg);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+#about {
+    width: 80%;
+}
+.about-title {
+    margin-top: 50px;
+}
+.about-main {
+    display: flex;
+    height: 500px;
+    margin-top: 100px;
+    font-family: 'Microsoft JhengHei';
+}
+.about-box {
+    width: 100%;
+    height: 300px;
+    margin: 0 40px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    transition: 0.4s;
+}
+.about-box-title {
+    width: 80%;
+    margin: 40px auto;
+    padding-bottom: 20px;
+    font-size: 32px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.about-box-content {
+    margin-top: 60px;
+    font-size: 20px;
+}
+.about-box:hover {
+    background-color: #000;
+    color: #fff;
+}
+.about-box:hover .about-box-title {
+    border-color: #fff;
+}
+#contact {
+    width: 80%;
+}
+.about-us {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    order: 6;
+}
+.p-trigger {
+    letter-spacing: 2px;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+    transition: 0.5s;
+}
+.p-trigger:hover {
+    color: black;
+}
+.p-trigger:hover > .p-img {
+    top: 20px;
+    filter: grayscale(0);
+}
+.p-img {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    top: 100px;
+    transition: 0.5s;
+}
+.p1-img {
+    background: url(../images/P1.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.p2-img {
+    background: url(../images/P2.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.p3-img {
+    background: url(../images/P3.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.p4-img {
+    background: url(../images/P4.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.p5-img {
+    background: url(../images/P5.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.p6-img {
+    background: url(../images/P6.jpg);
+    background-size: 100% 100%;
+    filter: grayscale(1);
+}
+.about-us-quote {
+    margin: 80px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.special-thanks-btn {
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+    background: #000;
+    color: white;
+    font-size: 20px;
+}
+.special-thanks-list {
+    display: none;
+    margin: 0 auto;
+    padding: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.918);
+    color: hsl(60, 100%, 85%);
+    height: 100vh;
+}
+.special-thanks-list > h2 {
+    margin-top: 40px;
+    font-size: 60px;
+    letter-spacing: 6px;
+}
+.special-thanks-list > h4 {
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+.special-thanks-list > p {
+    margin: 20px;
+    letter-spacing: 2px;
+}
+.p-small {
+    font-size: 18px;
+}
+.aside {
+    position: fixed;
+    bottom: 100px;
+    color: grey;
+    right: 15px;
+}
+.aside-character {
+    width: 40px;
+    height: 40px;
+    margin: 3vh 0;
+    padding: 5px;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10%;
+}
+.aside-focus {
+    background-color: #777;
+    color: #fff;
+}
+.aside-focus * {
+    stroke: white;
 }
